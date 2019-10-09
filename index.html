@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>PWS A5 HW</title>
+  </head>
+
+  <body>
+<!--header-->
+    <header id="header" class="header_wrapper">
+      <img class="ryba_picture" src="./pictures/ryaba.svg" alt="picture">
+      <h1 class="text-h1">Chiken RyabA</h1>
+    </header>
+<!--main-->
+    <main>
+    <div class="menu_wrapper">
+      <div class="button_rules">
+        <button id="rules" type="button" class="btn btn-dark">Rules</button>
+      </div>
+    </div>
+
+    <div id="rules_text" class="rules_wrapper">
+      <h2>Правила теста!</h2>
+      <p>Тест очень сложный! Нужно заполнить все пропуски в задании и получить максимальное количество "больших пальцев".<br>
+      PS.Текст появится не зависимо от того сколько правильных ответов получилось.<br>
+      PSS. Последнее поле не проверяется (это не гуманно). <br>
+      </p>
+      <h2>Задание!</h2>
+      <p>Жили-были {var1} да {var2} <br>
+          Была у них {var3}<br>
+        Снесла {var3} {var4}, не простое - золотое<br>
+        - {var1} бил, бил - не разбил<br>
+        - {var2} била, била - не разбила<br>
+        {var5} бежала, {var6} задела, {var4} упало и разбилось.<br>
+        плачет, {var2} плачет, а {var3} кудахчет:
+        {speach}<br>
+      </p>
+    </div>
+
+    <div class="button_tryit">
+        <button id="tryit" type="button" class="btn btn-dark">TRY IT</button>
+    </div>
+
+    <div id="container" class="container">
+      <form id="messages">
+        <div class="form-group">
+          <label for="var1">var1</label>
+          <input type="text" class="form-control" name="var1" placeholder="" value="">
+        </div>
+        <div id="var1_label"> <i  class="fas fa-thumbs-up" style="color: green"></i>
+        </div>
+      </form>
+
+      <form id="messages">
+        <div class="form-group">
+          <label for="var2">var2</label>
+          <input type="text" class="form-control" name="var2" placeholder="" value="">
+        </div>
+        <div id="var2_label"> <i  class="fas fa-thumbs-up" style="color: green"></i>
+        </div>
+      </form>
+
+      <form id="messages">
+        <div class="form-group">
+          <label for="var3">var3</label>
+          <input type="text" class="form-control" name="var3" placeholder="" value="">
+        </div>
+         <div id="var3_label"> <i  class="fas fa-thumbs-up" style="color: green"></i>
+        </div>
+      </form>
+      
+      <form id="messages">
+        <div class="form-group">
+          <label for="var4">var4</label>
+          <input type="text" class="form-control" name="var4" placeholder="" value="">
+        </div>
+        <div id="var4_label"> <i  class="fas fa-thumbs-up" style="color: green"></i>
+        </div>
+      </form>
+
+      <form id="messages">
+        <div class="form-group">
+          <label for="var5">var5</label>
+          <input type="text" class="form-control" name="var5" placeholder="" value="">
+        </div>
+        <div id="var5_label"> <i  class="fas fa-thumbs-up" style="color: green"></i>
+        </div>
+      </form>
+
+      <form id="messages">
+        <div class="form-group">
+          <label for="var6">var6</label>
+          <input type="text" class="form-control" name="var6" placeholder="" value="">
+        </div>
+        <div id="var6_label"> <i  class="fas fa-thumbs-up" style="color: green"></i>
+        </div>
+      </form>
+
+      <form id="messages">
+        <div class="form-group">
+          <label for="speach">speach</label>
+          <input type="text" class="form-control" name="speach" placeholder="не плачь Старик, не плач Старуха, снесу вам другое яичко, лучше прежнего" value="не плачь Старик, не плач Старуха, снесу вам другое яичко, лучше прежнего">
+        </div>
+      </form>
+
+      <div class="row">
+        <a id="button-fetch" class="btn btn-primary">Проверить и показать получившийся текст</a>
+      </div>
+      <div class="row">
+        <div id="result"></div>
+      </div>
+    </div>
+
+  </main>
+<!--script-->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/ryaba.js"></script>
+  </body>
+</html>
